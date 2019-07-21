@@ -14,4 +14,3 @@ Step 4. Add Network Info
        psk="NETWORK-PASSWORD"
     }
     Call the file wpa_supplicant.conf and save it
-qwerty
