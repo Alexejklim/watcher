@@ -1,0 +1,16 @@
+-set superuser password
+ sudo passwd root
+
+Step 3. Enable ssh
+crate empty "ssh" file in boot
+Step 4. Add Network Info
+
+    country=BY
+    ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+    update_config=1
+
+    network={
+       ssid="NETWORK-NAME"
+       psk="NETWORK-PASSWORD"
+    }
+    Call the file wpa_supplicant.conf and save it
