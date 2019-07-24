@@ -18,9 +18,7 @@ Step 4. Add Network Info
 
 
 #колибровка чувствительности-ложные срабатывания, четкость камеры
-
-# if flagsecurity and event and day is business and time is between(10:17):
-# run
+# https://www.geeksforgeeks.org/python-schedule-library/
 #if flagpericdic and setperiod = everyminut:
 #elif flagpericdic and setperiod = everyhour:
 
