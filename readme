@@ -18,6 +18,7 @@ Step 4. Add Network Info
 
 
 #колибровка чувствительности-ложные срабатывания, четкость камеры
+# https://aiogram.readthedocs.io/en/latest/examples/broadcast_example.html
 # https://www.geeksforgeeks.org/python-schedule-library/
 #if flagpericdic and setperiod = everyminut:
 #elif flagpericdic and setperiod = everyhour:
