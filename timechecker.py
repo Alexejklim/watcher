@@ -1,7 +1,7 @@
-import datetime
-# https://stackoverflow.com/questions/2224742/most-recent-previous-business-day-in-python
-
-class Today():
+from datetime import datetime
+# business days - pandas??
+# timezones! check in raspberry
+class Today(datetime):
     def __init__(self):
         pass
 

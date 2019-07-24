@@ -1,4 +1,3 @@
-from io import BytesIO
 import logging
 import json
 import schedule
@@ -28,14 +27,9 @@ dp = Dispatcher(bot)
 async def broadcaster():
     while True:
         schedule.run_pending()
-        isWorktime = time_in_range()
-        stream = BytesIO()
-        stream.seek(0)
-        stream.truncate()
         if raspberry:
             if watcherisrun and RPi.Muvement() and isBusinessday and isWorktime:
-                RPi.Capture(stream)
-                await bot.send_photo(CHAT,stream.getbuffer())
+                await bot.send_photo(CHAT,RPi.Capture())
                 # time.sleep(0.2)
                 # await bot.send_message(CHAT, 'stream.getbuffer()')
 
