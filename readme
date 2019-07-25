@@ -1,4 +1,4 @@
--set superuser password
+﻿-set superuser password
  sudo passwd root
 
 Step 3. Enable ssh
@@ -17,7 +17,7 @@ Step 4. Add Network Info
 
 
 
-#колибровка чувствительности-ложные срабатывания, четкость камеры
+#колибровка чувствительности-ложные срабатывания, четкость камеры,# timezones! check in raspberry
 # https://aiogram.readthedocs.io/en/latest/examples/broadcast_example.html
 # https://www.geeksforgeeks.org/python-schedule-library/
 #if flagpericdic and setperiod = everyminut:
