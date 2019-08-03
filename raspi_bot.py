@@ -8,7 +8,6 @@ class Raspberry:
         self.pin = config['pin']
         self.format = config['format']
         self.resolution = (config['hight'],config['wight'])
-        self.stream = BytesIO()
         self.GPIO = GPIO
         self.GPIO.setmode(GPIO.BCM)
         self.GPIO.setup(self.pin, GPIO.IN)
@@ -17,11 +16,10 @@ class Raspberry:
         return self.GPIO.input(self.pin)
 
     def Capture(self):
-        self.stream.seek(0)
-        self.stream.truncate()
-        with PiCamera() as self.camera:
-            self.camera.resolution = self.resolution
-            self.camera.start_preview()
-            self.camera.capture(self.stream, self.format)
-            self.camera.stop_preview()
-        return self.stream.getbuffer()
+         self.stream =BytesIO()
+         with PiCamera() as self.camera:
+             self.camera.resolution = self.resolution
+             self.camera.start_preview()
+             self.camera.capture(self.stream, self.format)
+             self.camera.stop_preview()
+             return self.stream.getbuffer()
