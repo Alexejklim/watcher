@@ -3,7 +3,7 @@ import logging, json, asyncio
 from aiogram import Bot, Dispatcher, executor, filters
 from aiogram.types import Message, CallbackQuery
 from timecontroller import Today
-from raspi_bot import Raspberry
+from raspberry import Raspberry
 from keyboard import keyboard
 from states import watcher, periodic
 
