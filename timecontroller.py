@@ -5,10 +5,10 @@ class Today:
         self.timebegin = time(config['begin'], 0, 0)
         self.timeend = time(config['end'], 0, 0)
 
-    def isBusinessday(self):    
+    def Isbusinessday(self):
         return date.today().weekday() < 5
 
-    def isWorktime(self):
+    def Isworktime(self):
         self.begin = datetime.combine(date.today(), self.timebegin)
         self.end = datetime.combine(date.today(), self.timeend)
         return self.begin <= datetime.now() <= self.end
