@@ -1,5 +1,4 @@
 import logging, json, asyncio
-# import schedule
 from aiogram import Bot, Dispatcher, executor, filters
 from aiogram.types import Message, CallbackQuery
 from timecontroller import Today

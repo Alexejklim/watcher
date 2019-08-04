@@ -2,7 +2,7 @@ from io import BytesIO
 
 class Raspberry:
     def __init__(self,config):
-        self.Isrun = False
+        self.Isrun = True
         self.pin = config['pin']
         self.format = config['format']
         self.resolution = (config['hight'],config['wight'])
